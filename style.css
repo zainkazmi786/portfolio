@@ -1,0 +1,235 @@
+::-webkit-scrollbar {
+ width: 12px;
+}
+/* Track (the area behind the scrollbar) */
+::-webkit-scrollbar-track {
+    background-color:rgb(3, 0, 35); /* Set background color of the track */
+}
+
+/* Handle (the draggable part of the scrollbar) */
+::-webkit-scrollbar-thumb {
+    background-color: rgba(26, 26, 111, 0.927); /* Change color on hover */
+    border-radius: 10px; /* Set border radius to make it rounded */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color:rgb(13, 0, 151); /* Set background color of the handle */
+}
+
+
+
+*{
+    color: wheat;
+    margin: 0;
+    padding: 1;
+    
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: rgb(3, 0, 35);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    height: 100vh;
+    overflow: hidden;
+}
+.left{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    width:50vw;
+    height: 100vh;    
+    /* backface-visibility: hidden; */
+}
+.photobutton{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    font-size: x-large;
+    font-weight: bolder;
+    height: 30px;
+    width: 200px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(0, 11, 92);
+    top:35px;
+    left: 180px;
+    cursor: pointer;
+    padding: 10px;
+
+}
+.photobutton:hover{
+    background-color: rgb(2, 13, 136);}
+.card{
+    display: flex;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease-in;
+    perspective: 1000px;
+    width: 80%;
+    height: 80%;
+    border-radius: 20px;
+}
+.photobutton:hover + .card{
+    transform: rotateY(180deg);
+}
+.leftcontent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+}
+.card-face{
+    backface-visibility: hidden;
+    position: absolute;
+}
+
+
+.myimage{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 20px;
+    padding: 10px;
+    transform: rotateY(180deg);
+    
+}
+.myimage .img{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    height: 80%;
+    width:80%;
+    overflow: hidden;
+}
+.img img{
+    border-radius: 20px;
+    object-fit: contain;
+}
+
+.left-head h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 45px;
+    font-weight: 900;
+    width: 100%;
+}
+.left-head h2{
+    font-size: 40px;
+    font-weight: 500;
+}
+p{
+    font-size: 25px;
+    font-weight: 100;
+}
+.menu li{
+    
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+    font-size: 27px;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+.line{
+    background-color: white;
+    width: 40px;
+    height: 1.5px;
+}
+.icons{
+    gap: 30px;
+}
+.right{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 170px;
+    width:50vw;
+    height: 100vh;
+    overflow: auto;
+    padding: 10px;
+}
+.right .About{
+    margin-top: 150px;
+    font-size: 25px;
+    font-weight: 200;
+    width:85%;
+}
+.experience{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.expbox{
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    width:100%;
+    
+}
+.expbox:hover{
+    background-color: rgb(33, 31, 83);
+}
+.expbox p{
+    font-size: 20px;
+}
+.date{
+    width:20%;
+    margin: 10px;
+}
+.details{
+    width:80%;
+}
+.buttons button{
+    width: 120px;
+    height: 30px;
+    border-radius: 20px;
+    margin-right: 5px;
+    background-color: rgb(83, 83, 83);
+    border: none;
+}
+.projects{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.probox{
+    display: flex;
+
+    border-radius: 15px;
+    padding: 10px;
+    width: 100%;
+}
+.probox:hover{
+    background-color: rgb(33, 31, 83);
+}
+.probox p{
+    font-size: 20px;
+}
+.projectdetails{
+    width: 70%;
+}
+.projectimage{
+    width: 30%;
+}
+.projectimage img{
+    height: 100px;
+    width: 90%;
+    object-fit: cover;
+}

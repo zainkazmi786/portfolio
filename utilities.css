@@ -1,0 +1,12 @@
+.mchildren > *{
+    margin: 10px auto;
+}
+.flex{
+    display: flex;
+}
+.invert{
+    filter: invert(1);
+}
+.pointer{
+    cursor: pointer;
+}
