@@ -32,7 +32,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 70px;
+    gap: 10vw;
     height: 100vh;
     overflow: hidden;
 }
@@ -42,7 +42,7 @@ body{
     flex-direction: column;
     align-items: end;
     justify-content: center;
-    width:50vw;
+    width:45vw;
     height: 100vh;    
     /* backface-visibility: hidden; */
 }
@@ -108,7 +108,7 @@ body{
 .myimage .img{
     
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     border-radius: 20px;
     height: 80%;
@@ -158,7 +158,7 @@ p{
     flex-direction: column;
     align-items: start;
     gap: 170px;
-    width:50vw;
+    width:45vw;
     height: 100vh;
     overflow: auto;
     padding: 10px;
@@ -189,11 +189,11 @@ p{
     font-size: 20px;
 }
 .date{
-    width:20%;
+    width:30%;
     margin: 10px;
 }
 .details{
-    width:80%;
+    width:70%;
 }
 .buttons button{
     width: 120px;
@@ -211,9 +211,8 @@ p{
 }
 .probox{
     display: flex;
-
-    border-radius: 15px;
     padding: 10px;
+    border-radius: 15px;
     width: 100%;
 }
 .probox:hover{
@@ -232,4 +231,54 @@ p{
     height: 100px;
     width: 90%;
     object-fit: cover;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 1150px) {
+    body{
+        flex-direction: column;
+        justify-content: unset;
+        align-items: center;
+        overflow: auto;
+        height:auto;
+        gap: 0px;
+    }
+    .photobutton{
+        left: 10px;
+    }
+    .name{
+        font-size: 35px;
+        font-weight: 700;
+    }
+
+    .left{
+        width: 90vw;
+        height: 100vh;
+        align-items: center;
+    }
+    .right{
+        align-items: center;
+    
+        width : 90vw
+    }
+    .right .About{
+        margin-top: 0px;
+    }
+    .menu ul{
+        display: none;
+    }
+    .header{
+        
+        background-color: #010135;
+        position: sticky;
+        top:-12px;
+        width: 100%;
+        padding: 10px;
+        font-size: xx-large;
+    }
+}
+@media screen and (min-width: 1150px) {
+    .header{
+        display: none;
+    }
 }
