@@ -10,3 +10,7 @@
 .pointer{
     cursor: pointer;
 }
+.flexcolumn{
+    display: flex;
+    flex-direction: column;
+}
