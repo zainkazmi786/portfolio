@@ -108,14 +108,16 @@ body{
 .myimage .img{
     
     display: flex;
-    align-items: start;
+    align-items: center;
     justify-content: center;
     border-radius: 20px;
     height: 80%;
     width:80%;
-    overflow: hidden;
+    /* overflow-x: hidden; */
 }
 .img img{
+    height: 100%;
+    /* width:100%; */
     border-radius: 20px;
     object-fit: contain;
 }
