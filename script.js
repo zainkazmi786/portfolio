@@ -18,13 +18,13 @@ async function click(){
 })
 skills.addEventListener("click" , ()=>{
     right.scrollTo({
-        top :800,
+        top :1000,
         behavior : "smooth"
     }) 
 })
 projects.addEventListener("click" , ()=>{
     right.scrollTo({
-        top :right.scrollHeight,
+        top :1800,
         behavior : "smooth"
     }) 
 })
@@ -39,14 +39,14 @@ async function scroll(){
             line2.style.opacity = "1";
             line3.style.width = "40px";
             line3.style.opacity = "1";
-        } else if (right.scrollTop >= 200 && right.scrollTop < 885) {
+        } else if (right.scrollTop >= 200 && right.scrollTop < 1000) {
             line2.style.width = "100px";
             line2.style.opacity = "0.5";
             line1.style.width = "40px";
             line1.style.opacity = "1";
             line3.style.width = "40px";
             line3.style.opacity = "1";
-        } else if (right.scrollTop >= 885){
+        } else if (right.scrollTop >= 1000){
             line3.style.width = "100px";
             line3.style.opacity = "0.5";
             line1.style.width = "40px";
