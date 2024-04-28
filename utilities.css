@@ -14,3 +14,33 @@
     display: flex;
     flex-direction: column;
 }
+.level-50{
+    background-color: grey;
+    position: absolute;
+    height: 100%;
+    width: 50%;
+}
+.level-75{
+    background-color: grey;
+    position: absolute;
+    height: 100%;
+    width: 75%;
+}
+.level-90{
+    background-color: grey;
+    position: absolute;
+    height: 100%;
+    width: 90%;
+}
+.level-25{
+    background-color: grey;
+    position: absolute;
+    height: 100%;
+    width: 25%;
+}
+a{
+    text-decoration: none;
+}
+.justify{
+    text-align: justify;
+}

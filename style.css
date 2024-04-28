@@ -210,12 +210,7 @@ p{
     background-color: rgb(18, 18, 18);
     
 }
-.level{
-    background-color: grey;
-    position: absolute;
-    height: 100%;
-    width: 50%;
-}
+
 .buttons button{
     width: 120px;
     height: 30px;
@@ -290,12 +285,29 @@ p{
     }
     .header{
         
-        background-color: #010135;
+        background-color: #00005fa8;
+        border-radius: 20px;
         position: sticky;
         top:-12px;
         width: 100%;
         padding: 10px;
         font-size: xx-large;
+    }
+    .probox{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .projectimage{
+        width:90%
+    }
+    .projectdetails{
+        width: 90%;
+        
+    }
+    .ebox{
+    display: flex;
+    flex-direction: column;
     }
 }
 @media screen and (min-width: 1150px) {
