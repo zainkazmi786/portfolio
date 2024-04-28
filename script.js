@@ -32,23 +32,30 @@ projects.addEventListener("click" , ()=>{
 async function scroll(){
 
     right.addEventListener("scroll", () => {
-        if (right.scrollTop <200 ) {
+        if (right.scrollTop <400 ) {
             line1.style.width = "100px";
             line1.style.opacity = "0.5";
             line2.style.width = "40px";
             line2.style.opacity = "1";
             line3.style.width = "40px";
             line3.style.opacity = "1";
-        } else if (right.scrollTop >= 200 && right.scrollTop < 1000) {
+        } else if (right.scrollTop >= 400 && right.scrollTop < 1500) {
             line2.style.width = "100px";
             line2.style.opacity = "0.5";
             line1.style.width = "40px";
             line1.style.opacity = "1";
             line3.style.width = "40px";
             line3.style.opacity = "1";
-        } else if (right.scrollTop >= 1000){
+        } else if (right.scrollTop >= 1500){
             line3.style.width = "100px";
             line3.style.opacity = "0.5";
+            line1.style.width = "40px";
+            line1.style.opacity = "1";
+            line2.style.width = "40px";
+            line2.style.opacity = "1";
+        }else{
+            line3.style.width = "40px";
+            line3.style.opacity = "1";
             line1.style.width = "40px";
             line1.style.opacity = "1";
             line2.style.width = "40px";
